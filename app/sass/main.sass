@@ -33,18 +33,25 @@ body textarea:focus:required:invalid
 body input:required:valid,
 body textarea:required:valid
 	color: #666
-
+h1, h2, h3, h4, h5
+	margin: 0
+p
+	margin: 0
+ul
+	margin: 0
 html, body
 	height: 100%
-
-body
 	font-size: 16px
+	
+
+body	
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.55
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	background-color: $bg-color
 
 .img-responsive
 	display: block
@@ -54,4 +61,169 @@ body
 .text-center
 	text-align: center
 
+//header section
+
+.header
+	background-color: #e1e1e1	
+	&__top
+		background-color: $accent			
+.logo
+	display: flex
+	align-items: center
+	padding: 30px
+	&__img
+		width: 39px
+		height: 33px
+	&__title
+		margin-left: 20px
+		font-size: 30px
+		font-weight: 700		
+		text-transform: uppercase
+		letter-spacing: -0.9px
+	&__soft
+		color: #ffffff
+	&__group
+		color: #a6a7b0
+
+.slogan
+	padding: 30px
+	text-align: right
+	font-weight: 700
+	color: #f1f1f1
+
+.container-bg
+	background-color: #fff	
+	
+.post
+	margin-top: 30px
+	&__img
+		width: 100%
+		height: auto
+	&__link
+		&:hover
+			text-decoration: none
+	&__title
+		color: $accent
+		margin: 20px 0
+		font-size: 2em
+		font-weight: 700
+		line-height: 18px
+		text-transform: uppercase		
+		letter-spacing: -0.54px
+	&__text
+		color: $textColor
+		font-family: $default-font	
+		line-height: 20px
+		margin-bottom: 20px
+	&__btn
+		margin-bottom: 30px
+		background-color: $accent
+		outline: none
+		border: none
+		padding: .35em .5em
+		color: #ffffff		
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase		
+		letter-spacing: -0.42px
+		transition: all 0.4s ease
+		border: .1em solid $accent
+		cursor: pointer
+		&:hover
+			background-color: #fff
+			color: $accent
+			border: .1em solid $accent
+
+.wrapper
+	padding: 0 15px
+	
+
+.photo
+	display: flex 
+	justify-content: center
+	padding: 30px 0
+	&__img
+		width: 100%
+		min-height: 240px
+		background-color: #dedede
+		color: #b4b4b4		
+		font-size: 2rem		
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		padding: 50px
+		font-weight: 700		
+		text-transform: uppercase
+
+// Footer styles
+
+.footer
+	background-color: #e1e1e1
+	&-wrapper
+				
+.container-footer
+	background-color: #f1f1f1
+.container-footer-dark
+	background-color: #53545e
+.connected
+	padding: 30px
+	font-size: 2em
+	font-weight: 700
+	text-transform: uppercase
+.social
+	list-style-type: none
+	display: flex
+	padding: 30px
+	justify-content: space-between
+	&__item		
+		width: 3.2rem
+		height: 3.2rem
+		background-color: #e1e1e1
+		border-radius: 50%
+		text-align: center
+		vertical-align: middle		
+	&__link
+		font-size: 2em
+		color: $accent
+		transition: all .4s		
+		&:hover
+			color: #ffffff
+			text-decoration: none
+		
+.bellow
+	padding: 30px
+	&__text
+		color: #ffffff
+		line-height: 2rem
+		
+.footer-menu
+	list-style-type: none
+	padding: 30px	
+	&__link
+		color: #ffffff
+		line-height: 2rem
+		font-weight: 400
+		&:hover
+			color: #ffffff
+
+.copyright
+	padding: 20px 30px
+	color: #a6a7b0	
+	font-size: 1rem
+	font-weight: 400
+	line-height: 24px
+	&__group
+		color: #ffffff
+		&:hover
+			color: #ffffff	
+.down
+	padding: 20px 30px
+	text-align: right
+	&__link
+		color: #a6a7b0		
+		font-weight: 400
+		line-height: 24px
+		&:hover
+			color: #ffffff
 @import "media" // Всегда в конце
