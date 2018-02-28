@@ -18,6 +18,9 @@ var gulp           = require('gulp'),
 
 gulp.task('common-js', function() {
 	return gulp.src([
+		'app/libs/jquery/dist/jquery.min.js',
+	//	'app/libs/jquery/dist/jquery.validate.js',
+		'node_modules/bootstrap/dist/js/bootstrap.min.js',
 		'app/js/common.js',
 		])
 	.pipe(concat('common.min.js'))

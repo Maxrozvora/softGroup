@@ -93,7 +93,14 @@ body
 
 .container-bg
 	background-color: #fff	
-	
+
+.hr
+	height: 1px
+	background-color: #eaeaea	
+	margin: 0 15px
+	&-white
+		background-color: #a6a7b0
+		margin: 0 30px
 .post
 	margin-top: 30px
 	&__img
@@ -226,4 +233,49 @@ body
 		line-height: 24px
 		&:hover
 			color: #ffffff
+
+// Modal form
+.btn-form	
+	background-color: #ffffff
+	outline: none
+	border: none
+	padding: .35em .5em
+	color: $accent		
+	font-size: 16px
+	font-weight: 700
+	text-transform: uppercase		
+	letter-spacing: -0.42px
+	transition: all 0.4s ease
+	border: .1em solid #ffffff
+	cursor: pointer
+	&:hover
+		background-color: $accent
+		color: #ffffff
+		border: .1em solid #ffffff
+	&-close
+		background-color: $accent
+		color: #ffffff
+	&-save
+		border-color: $accent
+	
+
+.modal
+	&-content
+		border-radius: 0
+	&-header
+		background-color: $accent
+		border-radius: 0
+		color: #ffffff
+	&__input
+		display: block
+		width: 100%
+		padding:  2px 5px
+		margin: 10px 0
+
+.error-box
+	color: red
+	font-size: 12px
+
+.pac-container
+	z-index: 2000
 @import "media" // Всегда в конце

@@ -29,26 +29,34 @@
       <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
     <![endif]-->
-    <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 	  <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
     <![endif]-->
 </head>
 
 <body>
-	<header class="header">		
-			<div class="container header__top">
-				<div class="row d-flex align-items-center">
-					<div class="col-md-6">
-						<div class="logo">
-							<img src="img/logo.png" alt="Soft Group" class="logo__img">
-							<div class="logo__title"><span class="logo__soft">Soft</span><span class="logo__group">Group</span></div>
+	<header class="header">
+		<div class="container header__top">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6">
+					<div class="logo">
+						<img src="img/logo.png" alt="Soft Group" class="logo__img">
+						<div class="logo__title">
+							<span class="logo__soft">Soft</span>
+							<span class="logo__group">Group</span>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="slogan"><span class="slogan__text">High perfomance software development</span></div>
+				</div>
+				<div class="col-md-4">
+					<div class="slogan">
+						<span class="slogan__text">High perfomance software development</span>
 					</div>
 				</div>
-			</div>		
+				<div class="col-md">
+					<button class="btn-form" id="btn-form" data-toggle="modal" data-target="#modalForm">Contact us</button>
+				</div>
+			</div>			
+		</div>
 	</header>
 	<section class="heading">
 		<div class="container container-bg">
@@ -60,12 +68,14 @@
 							<a href="#" class="post__link">
 								<h2 class="post__title">Larger Item Heading</h2>
 							</a>
-							<p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi. </p>
+							<p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget
+								ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi. </p>
 							<button class="post__btn">Details</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="hr"></div>
 		</div>
 	</section>
 	<section class="content">
@@ -94,48 +104,55 @@
 					</div>
 				</div>
 			</div>
+			<div class="hr"></div>
 		</div>
 		<div class="container container-bg">
 			<div class="wrapper">
 				<div class="row">
 					<div class="col-md-4">
 						<div class="photo animated jello">
-							<div class="photo__img">add<br> photo</div>
+							<div class="photo__img">add
+								<br> photo</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="photo animated jello">
-							<div class="photo__img">add<br> photo</div>
+							<div class="photo__img">add
+								<br> photo</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="photo animated jello">
-							<div class="photo__img">add<br> photo</div>
+							<div class="photo__img">add
+								<br> photo</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="hr"></div>
 		</div>
 		<div class="blog-post">
 			<div class="container container-bg">
 				<div class="wrapper">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="post ml-0 animated zoomIn">							
+							<div class="post ml-0 animated zoomIn">
 								<a href="#" class="post__link">
 									<h2 class="post__title">Blog Post Title One</h2>
 								</a>
-								<p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi. </p>
+								<p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget
+									ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi. </p>
 								<button class="post__btn">Details</button>
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="post ml-0 animated zoomIn">
-								
+
 								<a href="#" class="post__link">
 									<h2 class="post__title">Blog Post Title One</h2>
 								</a>
-								<p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi. </p>
+								<p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget
+									ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi. </p>
 								<button class="post__btn">Details</button>
 							</div>
 						</div>
@@ -148,48 +165,142 @@
 		<div class="container container-footer">
 			<div class="footer-wrapper">
 				<div class="row d-flex align-items-center">
-					<div class="col-md-4"><h3 class="connected">Stay Connected</h3></div>
+					<div class="col-md-4">
+						<h3 class="connected">Stay Connected</h3>
+					</div>
 					<div class="col-md">
-				<ul class="social">
-					<li class="social__item"><a href="#" class="social__link"><i class="fa fa-twitter"></i></a></li>
-					<li class="social__item"><a href="#" class="social__link"><i class="fa fa-facebook"></i></a></li>
-					<li class="social__item"><a href="#" class="social__link"><i class="fa fa-rss"></i></a></li>
-					<li class="social__item"><a href="#" class="social__link"><i class="fa fa-pinterest"></i></a></li>
-					<li class="social__item"><a href="#" class="social__link"><i class="fa fa-google-plus-official"></i></a></li>
-					<li class="social__item"><a href="#" class="social__link"><i class="fa fa-dribbble" ></i></a></li>
-					<li class="social__item"><a href="#" class="social__link"> <i class="fa fa-linkedin"></i></a></li>
-					<li class="social__item"><a href="#" class="social__link">⚇</a></li>
-				</ul>
-			</div>
+						<ul class="social">
+							<li class="social__item">
+								<a href="#" class="social__link">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">
+									<i class="fa fa-rss"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">
+									<i class="fa fa-pinterest"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">
+									<i class="fa fa-google-plus-official"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">
+									<i class="fa fa-dribbble"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">⚇</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container container-footer-dark">
 			<div class="row">
-				<div class="col-md-8"><div class="bellow">
-					<p class="bellow__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est id nulla luctus, quis posuere metus elementum. Phasellus elementum tortor nec massa pellentesque lobortis.
-					</p>
-				</div></div>
-				<div class="col-md"><ul class="footer-menu">
-					<li class="footer-menu__item"><a href="#" class="footer-menu__link"><i class="fa fa-chevron-right" aria-hidden="true"></i> Quick link One</a></li>
-					<li class="footer-menu__item"><a href="#" class="footer-menu__link"><i class="fa fa-chevron-right" aria-hidden="true"></i> Quick link Two</a></li>
-					<li class="footer-menu__item"><a href="#" class="footer-menu__link"><i class="fa fa-chevron-right" aria-hidden="true"></i> Quick link Three</a></li>
-					<li class="footer-menu__item"><a href="#" class="footer-menu__link"><i class="fa fa-chevron-right" aria-hidden="true"></i> Quick link Four</a></li>
-					
-				</ul></div>
-			</div>
-			<div class="row">
-				<div class="col-md-8"><p class="copyright">Copyright 2015 <a href="#" class="copyright__group">SoftGroup</a>. All Rights Reserved.</p></div>
+				<div class="col-md-8">
+					<div class="bellow">
+						<p class="bellow__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est id nulla luctus, quis posuere metus elementum. Phasellus
+							elementum tortor nec massa pellentesque lobortis.
+						</p>
+					</div>
+				</div>
 				<div class="col-md">
-					<div class="down"><a href="#" class="down__link">View Online</a>|<a href="#" class="down__link">Unsubscribe</a></div>
+					<ul class="footer-menu">
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i> Quick link One</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i> Quick link Two</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i> Quick link Three</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i> Quick link Four</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="hr hr-white"></div>
+			<div class="row">
+				<div class="col-md-8">
+					<p class="copyright">Copyright 2015
+						<a href="#" class="copyright__group">SoftGroup</a>. All Rights Reserved.</p>
+				</div>
+				<div class="col-md">
+					<div class="down">
+						<a href="#" class="down__link">View Online</a>|
+						<a href="#" class="down__link">Unsubscribe</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	
+	<!-- Modal -->
+	<div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Оставить заявку</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="callback" id="form">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Soft Group">
+						<input type="hidden" name="admin_email" value="rozvora.max@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка сайта Soft Group">
+						<!-- END Hidden Required Fields -->
+						<input type="hidden" name="Страница" value="">
+						<p>Оставьте заявку и мы перезвоним вам в течение 15 минут.</p>
+						<input required type="text" class="modal__input" id="name" name="name" placeholder="Ваше имя..." >
+						<input required type="email" class="modal__input" id="email" name="email" placeholder="Ваш email...">
+						<input required type="text" class="modal__input" id="autocomplete" name="city" placeholder="Ваш город...">
+						<button type="submit" class="btn-form btn-form-save">Отправить</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--Scripts-->
+	<script>
+		function activataPlaceSearch() {
+			var input = document.getElementById('autocomplete');
+			var autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'))
+		}
+	</script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUmnFuLWdUmqR9_dNgojClVi5wvifQ7vw&libraries=places&callback=activataPlaceSearch"></script>
 	<script src="js/scripts.min.js"></script>
 
+
 </body>
+
 </html>
