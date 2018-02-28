@@ -3,30 +3,23 @@ $(function() {
 	$('#btn-form').click(function() {		
 		$('#modalForm').modal('toggle'); //toggle modal form
 	});
+	// init wow script
+	var wow = new WOW(
+		{
+		  boxClass:     'wow',      // animated element css class (default is wow)
+		  animateClass: 'animated', // animation css class (default is animated)
+		  offset:       50,          // distance to the element when triggering the animation (default is 0)
+		  mobile:       true,       // trigger animations on mobile devices (default is true)
+		  live:         true,       // act on asynchronously loaded content (default is true)
+		  callback:     function(box) {
+			// the callback is fired every time an animation is started
+			// the argument that is passed in is the DOM node being animated
+		  },
+		  scrollContainer: null // optional scroll container selector, otherwise use window
+		}
+	  );
+	  wow.init();
 
-	//////////////////////////////////////////////////
-	//Validation form
-	// $('#form').validate({
-	// 	rules: {
-	//    name: {
-	//    required: true,
-	//    minlength: 2
-	//    }
-	// 	},
-	// 	messages: {
-	//    name: {
-	//    required: "Поле 'Имя' обязательно к заполнению",
-	//    minlength: "Введите не менее 2-х символов в поле 'Имя'"
-	//    },
-	//    email: {
-	//    required: "Поле 'Email' обязательно к заполнению",
-	//    email: "Необходим формат адреса email" 
-	//    },
-	//    city: "Поле 'Город' обязательно к заполнению"
-	// 	}
-	//    });
-
-////////////////////////////////////////////
 	//E-mail Ajax Send
 	$("form.callback").submit(function() { //Change
 		var th = $(this);
